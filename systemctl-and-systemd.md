@@ -11,9 +11,9 @@ systemctl is the command to manage the systemd.
 Where:
 	-   **COMMAND** = operation (start, stop, enable, status, isolate, etc.)
     
--   **NAME** = unit name (e.g., `nginx.service`, `graphical.target`)
+	- **NAME** = unit name (e.g., `nginx.service`, `graphical.target`)
 
-
+ 
 ## common commands
 
 - starting a service  `$ sudo systemctl start <application[.service]>`.
@@ -105,5 +105,5 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTA3NDAyLDExOTczOTI1NzZdfQ==
+eyJoaXN0b3J5IjpbLTExNTk0NzYzMzQsMTE5NzM5MjU3Nl19
 -->
