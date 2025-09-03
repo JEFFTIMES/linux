@@ -3,6 +3,11 @@
 systemd is the popular  init system of almost linux distros.
 systemctl is the command to manage the systemd.
 
+
+
+
+
+
 ## common commands
 
 - starting a service  `$ sudo systemctl start <application[.service]>`.
@@ -94,5 +99,5 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzM5ODQyXX0=
+eyJoaXN0b3J5IjpbMTA5MjE0OTU0NF19
 -->
