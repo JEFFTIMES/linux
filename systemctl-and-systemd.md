@@ -93,3 +93,6 @@ units that require the target to be available can specify this condition using t
 - to initiate a full shutdown, `$ sudo systemctl poweroff`.
 
 - restarting the system, `$ sudo systemctl reboot`.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg1NzM5ODQyXX0=
+-->
