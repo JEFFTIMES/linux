@@ -4,6 +4,8 @@ systemd is the popular  init system of almost linux distros.
 systemctl is the command to manage the systemd.
 
 
+## Core Syntax
+
 
 
 
@@ -99,5 +101,5 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjE0OTU0NF19
+eyJoaXN0b3J5IjpbMTE5NzM5MjU3Nl19
 -->
