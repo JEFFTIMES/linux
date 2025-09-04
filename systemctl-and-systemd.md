@@ -21,7 +21,7 @@ Where:
 
 | **service**  | `.service` |  Daemons (e.g., `nginx.service`) |
 
-**socket**
+| **socket**
 
 `.socket`
 
@@ -143,6 +143,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTM4MjQ2LDIwOTc4MjM4OCwxNzA0MT
-MwNDAyLDExOTczOTI1NzZdfQ==
+eyJoaXN0b3J5IjpbLTIzOTM3MjY0MiwyMDk3ODIzODgsMTcwND
+EzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
