@@ -96,14 +96,20 @@ units that require the target to be available can specify this condition using t
 
 - it is possible to start all the units associated with a target and stop all units that are not part of the dependency tree. `$ sudo systemctl isolate multi-user.target`.
 
-		systemctl isolate graphical.target   # Switch to GUI mode
-		systemctl isolate multi-user.target  # Switch to text mode
-		systemctl set-default graphical.target # Boot to GUI by default
-		systemctl get-default                # Show default target
+		systemctl isolate graphical.target   					# Switch to GUI mode
+		systemctl isolate multi-user.target  				# Switch to text mode
+		systemctl set-default graphical.target 			# Boot to GUI by default
+		systemctl get-default                						# Show default target
 
 
-### Targets
+### ## **Systemd Targets & Boot**
 
+-   `graphical.target` → GUI + text services
+-   `multi-user.target` → CLI + network
+-   `rescue.target` → Single-user mode
+-   `emergency.target` → Minimal shell
+-   `poweroff.target` → Shutdown
+-   `reboot.target` → Restart
 
 
 ### using shortcuts for important events
@@ -116,7 +122,7 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDA3MTYwNywtNzIzODEyOTAyLC0xMT
-E5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1
-NzZdfQ==
+eyJoaXN0b3J5IjpbMTU5NzIzMjc2NiwxMTAwMDcxNjA3LC03Mj
+M4MTI5MDIsLTExMTkyODU3MTMsMjA5NzgyMzg4LDE3MDQxMzA0
+MDIsMTE5NzM5MjU3Nl19
 -->
