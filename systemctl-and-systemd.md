@@ -54,10 +54,11 @@ systemctl is the command to manage the systemd.
 
 ### Unit management
 
-- displaying a unit file, `$ systemctl cat <application[.service]>`.
-- displaying dependencies, `$ systemctl list-dependencies <application[.service]>`.
-- checking unit properties, `$ systemctl show <application[.service]>`.
-- checking specific property, `$ systemctl show <application[.service]> -p <property-name>`.
+		systemctl list-units --type=service       # Running services
+		systemctl list-unit-files --type=service # All installed services
+		systemctl show <unit>                     # All properties of a unit
+		systemctl cat <unit>                      # Show unit file
+		systemctl daemon-reload                   # Reload after editing units
 
 ### Masking service
 
@@ -115,7 +116,7 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDkyOTMxMywtNzIzODEyOTAyLC0xMT
+eyJoaXN0b3J5IjpbMTEwMDA3MTYwNywtNzIzODEyOTAyLC0xMT
 E5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1
 NzZdfQ==
 -->
