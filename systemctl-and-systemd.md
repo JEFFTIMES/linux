@@ -14,7 +14,47 @@ Where:
 - **COMMAND** = operation (start, stop, enable, status, isolate, etc.)    
 - **NAME** = unit name (e.g., `nginx.service`, `graphical.target`)
 
-## 
+## Types of Units
+
+Unit Type   File Extension
+
+Purpose
+
+**service**
+
+`.service`
+
+Daemons (e.g., `nginx.service`)
+
+**socket**
+
+`.socket`
+
+Socket activation
+
+**target**
+
+`.target`
+
+Group of units (like runlevels)
+
+**device**
+
+`.device`
+
+Hardware devices
+
+**mount**
+
+`.mount`
+
+Filesystem mounts
+
+**timer**
+
+`.timer`
+
+Scheduled tasks (cron replacement)
 
  
 ## common commands
@@ -108,6 +148,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzU3MDAyMDQsMjA5NzgyMzg4LDE3MD
-QxMzA0MDIsMTE5NzM5MjU3Nl19
+eyJoaXN0b3J5IjpbLTMyODQ3NzcwMSwyMDk3ODIzODgsMTcwND
+EzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
