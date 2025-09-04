@@ -149,8 +149,22 @@ Key directives in unit files:
     
 
 Example **Nginx service unit file**:
+
+		[Unit]
+		Description=NGINX web server
+		After=network.target
+
+		[Service]
+		ExecStart=/usr/sbin/nginx -g 'daemon off;'
+		ExecReload=/bin/kill -s HUP $MAINPID
+		Restart=on-failure
+
+		[Install]
+		WantedBy=multi-user.target
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjEwMDQzMTcsMTEwMDA3MTYwNywtNz
+eyJoaXN0b3J5IjpbLTE4Nzc1MTU5MTQsMTEwMDA3MTYwNywtNz
 IzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMw
 NDAyLDExOTczOTI1NzZdfQ==
 -->
