@@ -41,7 +41,17 @@ systemctl is the command to manage the systemd.
 		systemctl is-enabled nginx.service # Check if enabled
 		systemctl is-active <application[.service]>  # checking the activation of a service
 		systemctl is-failed <application[.service]>
-		systemctl list-units							# 
+		systemctl list-units							# listing current active units
+		systemctl list-units --all				# listing all units
+		systemctl list units --all --state=inactive
+		systemctl list-units --type=service
+		systemctl list-unit-files	
+
+- listing all inactive units, `S `.
+
+- filtering by type, `$ `.
+
+- listing all unit files, `$ s`.
 		
 
 
@@ -130,6 +140,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc1OTY2MDgyLC0xMTE5Mjg1NzEzLDIwOT
-c4MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1NzZdfQ==
+eyJoaXN0b3J5IjpbMTcwNTg5MjA5MywtMTExOTI4NTcxMywyMD
+k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
