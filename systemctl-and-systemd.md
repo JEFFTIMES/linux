@@ -14,6 +14,8 @@ Where:
 - **COMMAND** = operation (start, stop, enable, status, isolate, etc.)    
 - **NAME** = unit name (e.g., `nginx.service`, `graphical.target`)
 
+## 
+
  
 ## common commands
 
@@ -106,6 +108,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzgyMzg4LDE3MDQxMzA0MDIsMTE5Nz
-M5MjU3Nl19
+eyJoaXN0b3J5IjpbLTE4NzU3MDAyMDQsMjA5NzgyMzg4LDE3MD
+QxMzA0MDIsMTE5NzM5MjU3Nl19
 -->
