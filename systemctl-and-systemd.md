@@ -6,7 +6,9 @@ systemctl is the command to manage the systemd.
 
 ## Core Syntax
 
+```bash
 		systemctl [OPTIONS] COMMAND [NAME...]
+```
 
 **Where:**
 
@@ -29,18 +31,23 @@ systemctl is the command to manage the systemd.
 
 ### Service Management
 
+```bash
 		systemctl start nginx.service      # Start service
 		systemctl stop nginx.service       # Stop service
 		systemctl restart nginx.service    # Restart service
 		systemctl reload nginx.service     # Reload config (without restart)
+```
 
 ### Enable/Disable at Boot
 
+```bash
 		systemctl enable nginx.service     # Start on boot
 		systemctl disable nginx.service    # Don't start on boot
+```
 
 ### Status and Logs
 
+```bash
 		systemctl status nginx.service     # Show detailed status
 		journalctl -u nginx.service        # Show logs for this service
 		systemctl is-enabled nginx.service # Check if enabled
@@ -51,14 +58,16 @@ systemctl is the command to manage the systemd.
 		systemctl list units --all --state=inactive
 		systemctl list-units --type=service
 		systemctl list-unit-files					# listing all unit files
+```
 
 ### Unit management
-```
+```bash
 		systemctl list-units --type=service       # Running services
 		systemctl list-unit-files --type=service # All installed services
 		systemctl show <unit>                     # All properties of a unit
 		systemctl cat <unit>                      # Show unit file
 		systemctl daemon-reload                   # Reload after editing units
+```
 
 ### Masking service
 
@@ -172,7 +181,7 @@ Example **Nginx service unit file**:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjc5NDExMjYsLTEyNjU0NjcxMzYsMT
-EwMDA3MTYwNywtNzIzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4
-MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1NzZdfQ==
+eyJoaXN0b3J5IjpbLTY1MDA1NzI3MiwtMTI2NTQ2NzEzNiwxMT
+AwMDcxNjA3LC03MjM4MTI5MDIsLTExMTkyODU3MTMsMjA5Nzgy
+Mzg4LDE3MDQxMzA0MDIsMTE5NzM5MjU3Nl19
 -->
