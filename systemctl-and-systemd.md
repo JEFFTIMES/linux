@@ -111,20 +111,20 @@ units that require the target to be available can specify this condition using t
 -   `poweroff.target` → Shutdown
 -   `reboot.target` → Restart
 
+### System Power Control
+
+		systemctl reboot                # Reboot system
+		systemctl poweroff              # Power off system
+		systemctl halt                  # Halt (stop CPU)
+		systemctl suspend               # Suspend to RAM
+		systemctl hibernate             # Hibernate
+		systemctl hybrid-sleep          # Suspend + Hibernate
 
 
+### 
 
-### using shortcuts for important events
-
-- put the system into rescue (single-user) mode, `$ sudo systemctl rescue`.
-
-- to halt the system, `$ sudo systemctl halt`.
-
-- to initiate a full shutdown, `$ sudo systemctl poweroff`.
-
-- restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTk5MjIyOCwxMTAwMDcxNjA3LC03Mj
-M4MTI5MDIsLTExMTkyODU3MTMsMjA5NzgyMzg4LDE3MDQxMzA0
-MDIsMTE5NzM5MjU3Nl19
+eyJoaXN0b3J5IjpbLTEzMzk2MDQ3MTAsMTEwMDA3MTYwNywtNz
+IzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMw
+NDAyLDExOTczOTI1NzZdfQ==
 -->
