@@ -34,18 +34,19 @@ systemctl is the command to manage the systemd.
 		systemctl restart nginx.service    # Restart service
 		systemctl reload nginx.service     # Reload config (without restart)
 
+### Enable/Disable at Boot
 
-- starting a service  `$ sudo systemctl start <application[.service]>`.
+		systemctl enable nginx.service     # Start on boot
+		systemctl disable nginx.service    # Don't start on boot
+		systemctl is-enabled nginx.service # Check if enabled
 
-- stopping a service `$ sudo systemctl stop <application[.service]>`.
+### Status and Logs
 
-- restarting a service `$ sudo systemctl restart <application[.service]>`.
+		systemctl status nginx.service     # Show detailed status
+		journalctl -u nginx.service        # Show logs for this service
 
-- starting a service reloading a service ( without restarting ), `$ sudo systemctl reload <application[.service]>`.
 
-- to start a service at boot, `$ sudo systemctl enable <application[.service]>`.
 
-- to disable the service from starting automatically, `$ sudo systemctl disable <application[.service]>`.
 
 ## checking system status
 
@@ -124,6 +125,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTkwODk2MSwtMTExOTI4NTcxMywyMD
+eyJoaXN0b3J5IjpbLTYzNjMzODc4OSwtMTExOTI4NTcxMywyMD
 k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
