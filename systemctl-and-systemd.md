@@ -37,54 +37,35 @@ systemctl is the command to manage the systemd.
 ### Enable/Disable at Boot
 
 		systemctl enable nginx.service     # Start on boot
-		systemctl disable nginx.service    # Don't start on bo
-
+		systemctl disable nginx.service    # Don't start on boot
 
 ### Status and Logs
 
 		systemctl status nginx.service     # Show detailed status
 		journalctl -u nginx.service        # Show logs for this service
+		systemctl is-enabled nginx.service # Check if enabled
+		systemctl is-active <application[.service]>  # checking the activation of a service
+		systemctl is-failed <application[.service]>
+		systemctl list-units							# listing current active units
+		systemctl list-units --all				# listing all units
+		systemctl list units --all --state=inactive
+		systemctl list-units --type=service
+		systemctl list-unit-files					# listing all unit files
 
-
-
-
-## checking system status
-
-- checking the status of a service, `$ systemctl status <application[.service]>`.
-
-- checking enablement of a service, `$ systemctl is-enabled <application[.service]>`.
-
-- checking the activation of a service, `$ systemctl is-active <application[.service]>`.
-
-- checking if a service failed, `$ systemctl is-failed <application[.service]>`.
-
-- listing current active units, `$ systemctl list-units`.
-
-- listing all units, `s systemctl list-units --all`.
-
-- listing all inactive units, `S systemctl list units --all --state=inactive`.
-
-- filtering by type, `$ systemctl list-units --type=service`.
-
-- listing all unit files, `$ systemctl list-unit-files`.
-
-## unit management
+## Unit management
 
 - displaying a unit file, `$ systemctl cat <application[.service]>`.
-
 - displaying dependencies, `$ systemctl list-dependencies <application[.service]>`.
-
 - checking unit properties, `$ systemctl show <application[.service]>`.
-
 - checking specific property, `$ systemctl show <application[.service]> -p <property-name>`.
 
-## masking service
+## Masking service
 
 - masking, `$ systemctl mask <application[.service]>`.
 
 - unmasking, `$ systemctl unmask <application[.service]>`.
 
-## editing unit files
+## Editing unit files
 
 - editing a precedence snippet, `$ sudo systemctl edit <application[.service]>`. It creates directory `application.service.d` in `/etc/systemd/system`, a snippet `override.conf` was created and saved here.
 
@@ -94,7 +75,7 @@ systemctl is the command to manage the systemd.
 
 - reloading the systemd after the editing, `$ sudo systemctl daemon-reload`.
 
-## adjusting the system state with targets
+## Adjusting the system state with targets
 
 targets are special unit files that describe a system state or synchronization point. the targets file have .target suffix.
 units that are part of the process can sync with targets by indicating in their configuration that they are WantBy= or RequiredBy= the targets.
@@ -125,6 +106,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDM5NzM5NiwtMTExOTI4NTcxMywyMD
+eyJoaXN0b3J5IjpbMTc3Mjc0NjQxOSwtMTExOTI4NTcxMywyMD
 k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
