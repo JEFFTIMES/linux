@@ -17,7 +17,7 @@ Where:
 ## Types of Units
 
 | Unit Type  |  File Extension  |  Purpose |
-| ----- | ---- | ---- |
+| :---        |    :----:   |          ---: |
 
 | **service**  | `.service` |  Daemons (e.g., `nginx.service`) |
 | **socket** | `.socket` |  Socket activation |
@@ -118,6 +118,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYzNTgzOTIsMjA5NzgyMzg4LDE3MD
+eyJoaXN0b3J5IjpbLTE4Njc1NTcxNDksMjA5NzgyMzg4LDE3MD
 QxMzA0MDIsMTE5NzM5MjU3Nl19
 -->
