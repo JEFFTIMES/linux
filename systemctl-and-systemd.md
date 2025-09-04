@@ -53,7 +53,7 @@ systemctl is the command to manage the systemd.
 		systemctl list-unit-files					# listing all unit files
 
 ### Unit management
-
+```
 		systemctl list-units --type=service       # Running services
 		systemctl list-unit-files --type=service # All installed services
 		systemctl show <unit>                     # All properties of a unit
@@ -96,11 +96,12 @@ units that require the target to be available can specify this condition using t
 
 - it is possible to start all the units associated with a target and stop all units that are not part of the dependency tree. `$ sudo systemctl isolate multi-user.target`.
 
+```bash
 		systemctl isolate graphical.target   					# Switch to GUI mode
 		systemctl isolate multi-user.target  				# Switch to text mode
 		systemctl set-default graphical.target 			# Boot to GUI by default
 		systemctl get-default                						# Show default target
-
+```
 
 ### Systemd Targets & Boot
 
@@ -113,18 +114,21 @@ units that require the target to be available can specify this condition using t
 
 ### System Power Control
 
+```bash
 		systemctl reboot                # Reboot system
 		systemctl poweroff              # Power off system
 		systemctl halt                  # Halt (stop CPU)
 		systemctl suspend               # Suspend to RAM
 		systemctl hibernate             # Hibernate
 		systemctl hybrid-sleep          # Suspend + Hibernate
-
+```
 
 ### Emergency & Recovery
 
+```bash
 		systemctl isolate rescue.target    # Single-user mode
 		systemctl isolate emergency.target # Minimal shell (root only)
+```
 
 ## System Dependency Management
 
@@ -150,6 +154,7 @@ Key directives in unit files:
 
 Example **Nginx service unit file**:
 
+```ini
 		[Unit]
 		Description=NGINX web server
 		After=network.target
@@ -162,12 +167,12 @@ Example **Nginx service unit file**:
 		[Install]
 		WantedBy=multi-user.target
 
-
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjU0NjcxMzYsMTEwMDA3MTYwNywtNz
-IzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMw
-NDAyLDExOTczOTI1NzZdfQ==
+eyJoaXN0b3J5IjpbLTExNjc5NDExMjYsLTEyNjU0NjcxMzYsMT
+EwMDA3MTYwNywtNzIzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4
+MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1NzZdfQ==
 -->
