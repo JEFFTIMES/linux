@@ -121,10 +121,36 @@ units that require the target to be available can specify this condition using t
 		systemctl hybrid-sleep          # Suspend + Hibernate
 
 
-### 
+### Emergency & Recovery
 
+		systemctl isolate rescue.target    # Single-user mode
+		systemctl isolate emergency.target # Minimal shell (root only)
+
+## System Dependency Management
+
+Systemd uses **unit files** that define:
+
+-   **What** to start (service, target, socket, etc.)
+    
+-   **When** to start (dependencies, order)
+    
+-   **Conditions** for activation (path, timer, device, etc.)
+    
+
+Key directives in unit files:
+
+-   `Requires=` → Hard dependency (must start together)
+    
+-   `Wants=` → Soft dependency (optional)
+    
+-   `Before=` / `After=` → Ordering only
+    
+-   `Conflicts=` → Mutually exclusive
+    
+
+Example **Nginx service unit file**:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzk2MDQ3MTAsMTEwMDA3MTYwNywtNz
+eyJoaXN0b3J5IjpbLTE4NjEwMDQzMTcsMTEwMDA3MTYwNywtNz
 IzODEyOTAyLC0xMTE5Mjg1NzEzLDIwOTc4MjM4OCwxNzA0MTMw
 NDAyLDExOTczOTI1NzZdfQ==
 -->
