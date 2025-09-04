@@ -26,7 +26,13 @@ Where:
 | **timer** | `.timer` | Scheduled tasks (cron replacement) |
 
  
-## common commands
+## Common Commands
+
+		systemctl start nginx.service      # Start service
+		systemctl stop nginx.service       # Stop service
+		systemctl restart nginx.service    # Restart service
+		systemctl reload nginx.service     # Reload config (without restart)
+
 
 - starting a service  `$ sudo systemctl start <application[.service]>`.
 
@@ -117,6 +123,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTkyODU3MTMsMjA5NzgyMzg4LDE3MD
-QxMzA0MDIsMTE5NzM5MjU3Nl19
+eyJoaXN0b3J5IjpbMTI2OTA5MzU3MCwtMTExOTI4NTcxMywyMD
+k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
