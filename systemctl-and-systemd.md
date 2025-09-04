@@ -1,7 +1,6 @@
 # systemctl and systemd
 
 systemd is the popular  init system of almost linux distros.
-
 systemctl is the command to manage the systemd.
 
 
@@ -9,7 +8,7 @@ systemctl is the command to manage the systemd.
 
 		systemctl [OPTIONS] COMMAND [NAME...]
 
-Where:
+**Where:**
 
 - **COMMAND** = operation (start, stop, enable, status, isolate, etc.)    
 - **NAME** = unit name (e.g., `nginx.service`, `graphical.target`)
@@ -27,6 +26,8 @@ Where:
 
  
 ## Common Commands
+
+### Service Management
 
 		systemctl start nginx.service      # Start service
 		systemctl stop nginx.service       # Stop service
@@ -123,6 +124,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTA5MzU3MCwtMTExOTI4NTcxMywyMD
+eyJoaXN0b3J5IjpbLTY4NTkwODk2MSwtMTExOTI4NTcxMywyMD
 k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
 -->
