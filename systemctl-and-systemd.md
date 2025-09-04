@@ -20,30 +20,10 @@ Where:
 | ----- | ---- | ---- |
 
 | **service**  | `.service` |  Daemons (e.g., `nginx.service`) |
-
-| **socket**
-
-`.socket`
-
-Socket activation
-
-**target**
-
-`.target`
-
-Group of units (like runlevels)
-
-**device**
-
-`.device`
-
-Hardware devices
-
-**mount**
-
-`.mount`
-
-Filesystem mounts
+| **socket** | `.socket` |  Socket activation |
+| **target** | `.target` | Group of units (like runlevels) |
+| **device** | `.device` | Hardware devices |
+| **mount** | `.mount` | Filesystem mounts |
 
 **timer**
 
@@ -143,6 +123,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTM3MjY0MiwyMDk3ODIzODgsMTcwND
-EzMDQwMiwxMTk3MzkyNTc2XX0=
+eyJoaXN0b3J5IjpbLTE4MjAwODY4LDIwOTc4MjM4OCwxNzA0MT
+MwNDAyLDExOTczOTI1NzZdfQ==
 -->
