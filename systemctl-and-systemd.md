@@ -102,7 +102,7 @@ units that require the target to be available can specify this condition using t
 		systemctl get-default                						# Show default target
 
 
-### ## **Systemd Targets & Boot**
+### Systemd Targets & Boot
 
 -   `graphical.target` → GUI + text services
 -   `multi-user.target` → CLI + network
@@ -110,6 +110,8 @@ units that require the target to be available can specify this condition using t
 -   `emergency.target` → Minimal shell
 -   `poweroff.target` → Shutdown
 -   `reboot.target` → Restart
+
+
 
 
 ### using shortcuts for important events
@@ -122,7 +124,7 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzIzMjc2NiwxMTAwMDcxNjA3LC03Mj
+eyJoaXN0b3J5IjpbMTgyOTk5MjIyOCwxMTAwMDcxNjA3LC03Mj
 M4MTI5MDIsLTExMTkyODU3MTMsMjA5NzgyMzg4LDE3MDQxMzA0
 MDIsMTE5NzM5MjU3Nl19
 -->
