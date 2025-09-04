@@ -39,6 +39,11 @@ systemctl is the command to manage the systemd.
 		systemctl enable nginx.service     # Start on boot
 		systemctl disable nginx.service    # Don't start on boot
 		systemctl is-enabled nginx.service # Check if enabled
+		systemctl is-active <application[.service]>  # checking the activation of a service
+		systemctl is-failed <application[.service]>
+		systemctl list-units							# 
+		
+
 
 ### Status and Logs
 
@@ -125,6 +130,6 @@ units that require the target to be available can specify this condition using t
 
 - restarting the system, `$ sudo systemctl reboot`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjMzODc4OSwtMTExOTI4NTcxMywyMD
-k3ODIzODgsMTcwNDEzMDQwMiwxMTk3MzkyNTc2XX0=
+eyJoaXN0b3J5IjpbNTc1OTY2MDgyLC0xMTE5Mjg1NzEzLDIwOT
+c4MjM4OCwxNzA0MTMwNDAyLDExOTczOTI1NzZdfQ==
 -->
